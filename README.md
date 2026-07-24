@@ -6,7 +6,7 @@
 
 Midex 使用 Codex 宠物 v2 格式，图集尺寸为 `1536 × 2288`，包含待机、左右奔跑、挥手、跳跃、失败、等待、工作、检查等标准动画，以及 16 个观察方向。
 
-![Midex 配图](./pet-images/midex.png)
+![Midex 配图](./midex.png)
 
 ## 2. Pixel Apple Cat
 
@@ -14,7 +14,7 @@ Midex 使用 Codex 宠物 v2 格式，图集尺寸为 `1536 × 2288`，包含待
 
 最新版使用 Codex 宠物 v2 格式，并包含顺时针排列的 16 个观察方向。
 
-![Pixel Apple Cat 配图](./pet-images/pixel-apple-cat.png)
+![Pixel Apple Cat 配图](./pixel-apple-cat.png)
 
 ## 3. 将宠物压缩、打包并安装到 Codex
 
