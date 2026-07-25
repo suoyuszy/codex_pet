@@ -16,9 +16,17 @@ Midex 使用 Codex 宠物 v2 格式，图集尺寸为 `1536 × 2288`，包含待
 
 ![Pixel Apple Cat 配图](./pixel_apple_cat.png)
 
-## 3. 将宠物压缩、打包并安装到 Codex
+## 3. Pixel Apple Cat
 
-### 3.1 准备宠物目录
+**GuGuGaGa** 是一只凑企鹅，喜欢咕咕嘎嘎。
+
+最新版使用 Codex 宠物 v2 格式，并包含顺时针排列的 16 个观察方向。
+
+![GuGuGaGa 配图](./gugugaga.png)
+
+## 4. 将宠物压缩、打包并安装到 Codex
+
+### 4.1 准备宠物目录
 
 每只宠物使用一个独立文件夹，至少包含以下两个文件：
 
@@ -32,7 +40,7 @@ midex/
 - `spritesheet.webp`：宠物动画图集。
 - v2 宠物图集通常为 `1536 × 2288`，由 8 列、11 行、每格 `192 × 208` 的动画单元组成。
 
-### 3.2 编写 pet.json
+### 4.2 编写 pet.json
 
 v2 宠物的 `pet.json` 可以采用以下格式：
 
@@ -46,7 +54,7 @@ v2 宠物的 `pet.json` 可以采用以下格式：
 }
 ```
 
-### 3.3 压缩宠物包
+### 4.3 压缩宠物包
 
 在 PowerShell 中进入宠物文件夹的上一级目录，然后运行：
 
@@ -54,7 +62,7 @@ v2 宠物的 `pet.json` 可以采用以下格式：
 Compress-Archive -LiteralPath ".\midex" -DestinationPath ".\midex.zip" -Force
 ```
 
-### 3.4 安装到 Codex
+### 4.4 安装到 Codex
 
 将完整宠物文件夹复制到：
 
@@ -76,7 +84,7 @@ E:\codex\pets\midex\
 Expand-Archive -LiteralPath ".\midex.zip" -DestinationPath "$env:CODEX_HOME\pets" -Force
 ```
 
-### 3.5 安装后检查
+### 4.5 安装后检查
 
 安装完成后请确认：
 
