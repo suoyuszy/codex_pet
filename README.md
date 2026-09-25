@@ -24,9 +24,17 @@ Midex 使用 Codex 宠物 v2 格式，图集尺寸为 `1536 × 2288`，包含待
 
 ![GuGuGaGa 配图](./gugugaga.png)
 
-## 4. 将宠物压缩、打包并安装到 Codex
+## 4. Deepseek小鲸娘
 
-### 4.1 准备宠物目录
+**Deepseek小鲸娘** 是一只Deepseek小鲸娘宠物模型，喜欢吃大白米饭。
+
+最新版使用 Codex 宠物 v2 格式，并包含顺时针排列的 16 个观察方向。
+
+![Deepseek—娘 配图](./deepseek-niang.png)
+
+## 5. 将宠物压缩、打包并安装到 Codex
+
+### 5.1 准备宠物目录
 
 每只宠物使用一个独立文件夹，至少包含以下两个文件：
 
@@ -40,7 +48,7 @@ midex/
 - `spritesheet.webp`：宠物动画图集。
 - v2 宠物图集通常为 `1536 × 2288`，由 8 列、11 行、每格 `192 × 208` 的动画单元组成。
 
-### 4.2 编写 pet.json
+### 5.2 编写 pet.json
 
 v2 宠物的 `pet.json` 可以采用以下格式：
 
@@ -54,7 +62,7 @@ v2 宠物的 `pet.json` 可以采用以下格式：
 }
 ```
 
-### 4.3 压缩宠物包
+### 5.3 压缩宠物包
 
 在 PowerShell 中进入宠物文件夹的上一级目录，然后运行：
 
@@ -62,7 +70,7 @@ v2 宠物的 `pet.json` 可以采用以下格式：
 Compress-Archive -LiteralPath ".\midex" -DestinationPath ".\midex.zip" -Force
 ```
 
-### 4.4 安装到 Codex
+### 5.4 安装到 Codex
 
 将完整宠物文件夹复制到：
 
@@ -84,7 +92,7 @@ E:\codex\pets\midex\
 Expand-Archive -LiteralPath ".\midex.zip" -DestinationPath "$env:CODEX_HOME\pets" -Force
 ```
 
-### 4.5 安装后检查
+### 5.5 安装后检查
 
 安装完成后请确认：
 
